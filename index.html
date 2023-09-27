@@ -39,6 +39,10 @@
                     <li onclick="red();">
                         <a>Mis Redes</a>
                     </li>
+                    <li>
+                        <a href="https://mywebar.com/p/Project_0_xdfolc5qbv" target="_blank"
+                            onclick="abrirCerrarMenu()">Vr Tarjeta</a>
+                    </li>
                 </ul>
             </nav>
             <button class="bt-menu" onclick="abrirCerrarMenu()"><i
@@ -51,10 +55,11 @@
 
         <div class="contenido">
             <div class="red-ico">
-                <a href="https://www.instagram.com/ruizlhuis/" target="_blank"><i class="fa-brands fa-instagram fa-fade ico-lateral inst"></i></a>
-                <i  onclick="red();" class="fa-brands fa-pinterest fa-fade ico-lateral pin"></i>
-                <i  onclick="red();" class="fa-brands fa-square-threads fa-fade ico-lateral threads"></i>
-                <i  onclick="red();" class="fa-brands fa-square-x-twitter fa-fade ico-lateral threads"></i>
+                <a href="https://www.instagram.com/ruizlhuis/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-fade ico-lateral inst"></i></a>
+                <i onclick="red();" class="fa-brands fa-pinterest fa-fade ico-lateral pin"></i>
+                <i onclick="red();" class="fa-brands fa-square-threads fa-fade ico-lateral threads"></i>
+                <i onclick="red();" class="fa-brands fa-square-x-twitter fa-fade ico-lateral threads"></i>
 
             </div>
             <div class="info">
@@ -224,7 +229,8 @@
                                                     alt="gallery image">
                                             </div>
                                         </a>
-                                    <a href="" target="_blank"></a></div>
+                                        <a href="" target="_blank"></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="a">
@@ -249,66 +255,94 @@
                                     style=" color: #FFD04B;"></i></button></a>
                     </div>
         </div>
-
+        </div>
+        </div>
     </section>
-
-
-
     </div>
-
-
-
     </section>
-
-
-
 
 
 
     <!-- sección cursos -->
+
+    <div class="filtro">
+        <div class="pc">
+            <img class="img-pc"
+                src="img/png-clipart-samsung-galaxy-computer-icons-computer-monitors-a-computer-and-a-cell-phone-computer-network-gadget.png"
+                alt="">
+
+        </div>
+        <div class="cel">
+            <p class="texto">Descargar filtro para black style, para celular y pc (Dns, Xmp). El filtro Dns para
+                lightroom y el Filtro Xmp es para Photoshop Cámara Raw Me llevo mucho tiempo crearlo y buscar un estilo
+                Minimalista con esos Colores, Ahora solo descárgalo Gratis y disfrútalo en tus mejores fotos.
+                Disfruta el Filtro y regálame una donación
+
+                Te dejo mi CBU. 😘</p>
+            <button class="bt-2" onclick="copy('text1')">4150999718012586260025<i class="fa-solid fa-copy fa-fade"
+                    style="margin-left: 6px;"></i></button>
+            <a href="https://drive.google.com/drive/folders/1nOiMkuIsZiM8rqPlq44Zj-7zN23IqSH-?usp=sharing"
+                target="_blank"><button class="bt-filtro">Descargar Filtro Xmp <i
+                        class="fa-solid fa-desktop fa-fade"></i></button></a>
+            <a href="https://drive.google.com/drive/folders/1u6qaMBvztFGaQZuLxIUXXyw7uFQbG338?usp=sharing"
+                target="_blank"><button class="bt-filtro">Descargar Filtro Dns<i
+                        class="fa-solid fa-mobile fa-fade"></i></button></a>
+
+        </div>
+    </div>
     <section id="filtros">
-        
     </section>
 
-    <!-- numeros -->
 
+    
+    <div class="container-cbu">
+        <p id="text1" class="texto-none">4150999718012586260025</p>
+        <div class="container-cbu-1">
 
-    <!-- sección historias -->
-    <section id="clentes">
-        <h1></h1>
-    </section>
+        </div>
+        <div class="copi">
+            <p id="alert">CBU Copiado.</p>
+        </div>
+        <!--texto automatico js--->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="./js/main.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="estilos.css">
+        <!------ LIGHTBOX -------->
+        <script src="simplelightbox-master/dist/simple-lightbox.js"></script>
+        <script src="scriptgal.js"></script>
+        <script src="main.js"></script>
+        <script src="ap.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="./js/main.js"></script>
+        <!-------alertas js--------->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            // copi
+            function copy(copyId) {
+                let inputElement = document.createElement("input");
+                inputElement.type = "text";
+                let copyText = document.getElementById(copyId).innerHTML;
+                inputElement.value = copyText;
+                document.body.appendChild(inputElement);
+                inputElement.select();
+                document.execCommand('copy');
+                document.body.removeChild(inputElement);
 
-    <!-- sección subscripción -->
-    <section id="contato">
+                document.getElementById("alert").style.display = "block";
+                setTimeout(function () {
+                    document.getElementById("alert").style.display = "none";
+                }, 3000);
+            }
 
-    </section>
-
-    <!-- footer -->
-    <footer>
-
-    </footer>
-
-    <!--texto automatico js--->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="./js/main.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="estilos.css">
-    <!-- LIGHTBOX -->
-    <script src="simplelightbox-master/dist/simple-lightbox.js"></script>
-    <script src="scriptgal.js"></script>
-    <script src="main.js"></script>
-    <script src="ap.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="./js/main.js"></script>
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        </script>
 </body>
 
 </html>
