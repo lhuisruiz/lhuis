@@ -1,241 +1,99 @@
 
-function modal_1() {
-  Swal.fire({
-    imageUrl: 'https://res.cloudinary.com/lhuis/image/upload/v1666754485/iconos/fkppmxoe9qs9xhggmzcc.png',
-    html: '<div class="mensaje-2">' +
-      '<h3 class="bm-4">Black Momets</h3>',
-
-    //tamaño
-    imageWidth: 300,
-    imageHeight: 300,
-    //cerrar
-    padding: '1rem',
-    showCloseButton: true,
-    showConfirmButton: false,
-    background: '#0e0e0e',
-
-  })
-}
-
-
-/* ==== INSTAGRAM ======
-
-
-// luchi
-function abrirNuevoTab(url) {
-    
-    var win = window.open(url, '_blank');
-    
-    win.focus();
-  }
-  $('#luchiinst').click(function(){
-    abrirNuevoTab('https://www.instagram.com/luisiana.dark')
-  })
-
-// fran
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#franinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/franco.rios13/') 
-})
-
-// juan moreno
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#juaninst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/juanmoreno_darc/')
-})
-
-// carlitos
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#carlitosinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/carlitoos_alvarez/')
-})
-
-// carlitos
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#nikoinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/nikiaquinoo/')
-})
-
-//juanca
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#juancainst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/juancachoque/')
-})
-
-//niko
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#nikolinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/nikiaquinoo/')
-})
-
-//fer arias
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#ferinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/arias.fer22/')
-})
-
-// ara
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#arainst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/nana_da_silva_1231/')
-})
-
-// eve
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#eveinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/ev_3lin/')
-})
-
-// wiliam
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#wiliaminst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/wiliams.brizuela.723/')
-})
-
-// margarita
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#margaritainst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/marvillalba13/')
-})
-
-// celso
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#celsoinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/celso_reall/')
-})
-
-// seva
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#sebainst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/sebas_aguilar723/')
-})
-
-// lauty
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#lautyinst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/_.ezequielito_723/')
-})
-
-// valen
-function abrirNuevoTab(url) {
-  
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#valeninst').click(function(){
-  abrirNuevoTab('https://www.instagram.com/valentinfalconefs/')
-})
-
-
-
-
-// ===== VER MAS ====
-
-// luchi
-  function abrirNuevoTab(url) {
- 
-    var win = window.open(url, '_blank');
-  
-    win.focus();
-  }
-  $('#luchimasfotos').click(function(){
-    abrirNuevoTab('https://lhuisruiz.github.io/lu/')
-  })
-
-// fran
-function abrirNuevoTab(url) {
- 
-  var win = window.open(url, '_blank');
-
-  win.focus();
-}
-$('#franmasfotos').click(function(){
-  abrirNuevoTab('https://lhuisruiz.github.io/fran/')
-})
-
-
-
-
 /* Lightbox */
 var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
 
+function modal_app() {
+    Swal.fire({
+        html:
+            '<div class="video-apk">' +
+            ' <video class="v-apk" width="285px" height="auto"  autoplay muted loop>' +
+            '<source src="https://res.cloudinary.com/lhuis/video/upload/v1675652072/videos/kkismnocvltefw6qyx7s.mp4" type="video/mp4">' +
+            '</video>' +
+            '</div>' +
+            '<div class="pasaword">' +
+            '<a  href="https://bit.ly/3JQZJ06"  target="_blank">' +
+            '<button  class="bt-msj-descargar" >Descargar App</button></a>' +
+            '<img class="qr-apk" src="img/qr-apk.png" alt="">'+
+            '</div>'+
+            '<h3 class="bm-4">Black Filter</h3>',
+        //tamaño
+        willOpen: '4',
+        Button: '5',
+        imageWidth: 300,
+        imageHeight: 400,
+        //cerrar,
+        showCloseButton: true,
+        showConfirmButton: false,
+        background: '#0e0e0e',
+        backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+    })
+}
 
+function logo() {
+Swal.fire({
+    imageUrl: 'https://res.cloudinary.com/fotoqe123/image/upload/v1666793201/ABAUT/Lhuis-modified_nhlzfy.png',
+   //tamaño
+    imageWidth: 300,
+    imageHeight: 300,
+    //cerrar
+    padding:'1rem',
+    showCloseButton:true,
+    showConfirmButton:false,
+    background:'linear-gradient(#000,#000)',
+    
+    
+})
+}
+function qr() {
+    Swal.fire({
+        imageUrl: 'https://res.cloudinary.com/fotoqe123/image/upload/v1695777987/qr-code_9_nqtr3b.png',
+       //tamaño
+        imageWidth: 300,
+        imageHeight: 300,
+        //cerrar
+        padding:'1rem',
+        showCloseButton:true,
+        showConfirmButton:false,
+        background:'linear-gradient(#000,#000)',
+        
+        
+    })
+    }
 
-/*fran insta
-let instfran = document.getElementById("instfran");
-instfran.addEventListener("click",()=>{
-    location.href="https://www.instagram.com/franco.rios13";
-})*/
-
-
+    function red() {
+        Swal.fire({
+            html: '<div class="red"><h4>Redes sociales Fotografia</h4>'+
+            '<div class="red-f">'+
+            '<a href="https://wa.me/541144382987"  target="_blank"><i class="fa-brands fa-whatsapp fa-bounce ico-fp"></i>'+
+            '<a href="https://www.instagram.com/ruizlhuis/" target="_blank"><i class="fa-brands fa-instagram fa-bounce ico-fp"></i></a>'+
+            '<a href="https://twitter.com/ruizlhuis" target="_blank"><i class="fa-brands fa-twitter fa-bounce ico-fp"></i>'+
+            '<a href="https://play.google.com/store/apps/details?id=lhuis.appipu&hl=es_AR&gl=US" target="_blank"><i class="fa-brands fa-google-play fa-bounce ico-fp"></a></i>'+
+            '<a href="mailto:ruizlhuis@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-bounce ico-fp"></i></a>'+
+            '<a href="https://www.threads.net/@ruizlhuis" target="_blank"><i class="fa-brands fa-tiktok fa-bounce ico-fp"></i></a>'+
+            '<a href="https://ar.pinterest.com/lhuisruiz/" target="_blank"><i class="fa-brands fa-snapchat fa-bounce ico-fp"></i></a>'+
+            '<a href="https://www.youtube.com/channel/UCDEXCMoufh1kKQC_zoiUFTA" target="_blank"><i class="fa-brands fa-youtube fa-bounce ico-fp"></i></a>'+
+            '<a href="https://www.threads.net/@lhuruiz" target="_blank"><i class="fa-brands fa-square-threads fa-bounce  ico-fp"></i></a>'+
+            '<a href="https://ar.pinterest.com/lhuisruiz/" target="_blank"><i class="fa-brands fa-pinterest fa-bounce ico-fp"></i></a>'+
+            '</div><h4>Redes sociales Personal</h4>'+
+            '<div class="red-p">'+
+            '<a href="" target="_blank"><i class="fa-brands fa-discord fa-bounce ico-fp"></i></a>'+
+            '<a href="https://www.threads.net/@lhuruiz" target="_blank"><i class="fa-brands fa-square-threads fa-bounce  ico-fp"></i></a>'+
+            '<a href="https://www.instagram.com/lhuruiz/" target="_blank"><i class="fa-brands fa-instagram fa-bounce ico-fp"></i></a>'+
+            '<a href="https://www.facebook.com/lhuisruiz/" target="_blank"><i class="fa-brands fa-facebook fa-bounce ico-fp"></i></a>'+
+            '<a href="" target="_blank"><i class="fa-brands fa-line fa-bounce ico-fp"></i></a>'+
+            '</div>'+
+            '</div>',
+           //tamaño
+            imageWidth: 300,
+            imageHeight: 300,
+            //cerrar
+            padding:'1rem',
+            showCloseButton:true,
+            showConfirmButton:false,
+            background:'linear-gradient(#000,#000)',
+        })
+        }
