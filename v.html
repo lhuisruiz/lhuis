@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliseo</title>
+    <link rel="icon" href="img/aaa.jpg" type="image/x-icon">
+
+
+    <meta name="description"
+        content="Una lista de las entradas del marco A enviadas a la competencia js13kGames 2017, que se utiliza como ejemplo para los artículos de MDN sobre Aplicaciones Web Progresivas" />
+    <meta name="author" content="end3r" />
+    <meta name="theme-color" content="#000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="icons/icon-512.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="manifest" href="js13kpwa.webmanifest" />
+    <script src="data/games.js" defer></script>
+    <script src="app.js" defer></script>
+
+    <script defer src="app.js"></script>
+
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0px solid red;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    .p-p {
+        color: #000;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-shadow: none;
+
+    }
+
+    h1,
+    p {
+        color: #fff;
+        text-shadow: 1px 2px 15px #000;
+        text-align: center;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        align-items: center;
+        background-image: url('img/IMG_4358.jpg');
+        /* Ruta de la imagen */
+        background-size: cover;
+        /* Ajusta la imagen para que cubra todo el fondo */
+        background-repeat: no-repeat;
+        /* Evita que se repita la imagen */
+        background-position: center center;
+        /* Centra la imagen horizontal y verticalmente */
+        background-attachment: fixed;
+        /* Hace que la imagen no se mueva al hacer scroll */
+    }
+
+    .img {
+        width: 180px;
+        border-radius: 50%;
+        height: auto;
+        box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.144);
+
+    }
+
+    .d1 {
+        width: 100%;
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .d2 {
+        width: 100%;
+        height: 600px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    button {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+
+    .ico {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .vvv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .bt-msj-descargar {
+        max-width: 100%;
+        margin: 10px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .qr {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .img-qr {
+        width: 80%;
+        height: auto;
+    }
+
+    .v-v {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .img-gb {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    @media all and (max-width: 300px) {
+        button {
+            width: 95%;
+        }
+
+        a {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media all and (min-width: 390px) {
+
+        .img-qr {
+            width: 300px;
+            height: auto;
+        }
+
+        .v-v {
+            width: 300px;
+
+        }
+    }
+
+    .apk {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 10px;
+        /* Distancia desde la parte inferior */
+        margin-left: 100%;
+        transform: translateX(-50%);
+        /* Centrar el botón */
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        z-index: 9999;
+    }
+</style>
+
+<body>
+    <div class="d1">
+        <img onclick="per();" class="img" src="img/aaa.jpg">
+        <h1 style="margin-top: 30px;">Eliseo Album</h1>
+        <a href="https://bit.ly/lhuisruiz" target="_blank">
+            <p style="margin-top: 10px;">Contacto: www.LhuisRuiz.com</p>
+        </a>
+    </div>
+    <div class="d2">
+        <button onclick="foto()">Galeria <img class="ico" src="img/Google_Photos_icon_(2020).svg.png" alt=""></button>
+        <button onclick="D();">Fotos 3D <img class="ico" src="img/unnamed.jpg" alt=""></button>
+        <button onclick="video()">Videos <img class="ico" src="img/Youtube_logo.png" alt=""></button>
+        <a href="https://lhuisruiz.github.io/search/"><button>Mi Juego <img class="ico" src="img/brain.png"
+                    alt=""></button></a>
+    </div>
+    <div class="qr">
+        <img onclick="qr();" class="img-qr" src="img/28695.png" alt="">
+    </div>
+    <p style="color: #fff; margin-top: 30px; margin-bottom: 20px;">Creado Por Lhuis Ruiz</p>
+</body>
+<script>
+    function D() {
+        Swal.fire({
+            html:
+                '<div class="vvv">' +
+                '<video class="v-v" autoplay controls muted src="qwqwqw.mp4"></video>' +
+                '<p class="p-p">Descarga Artevive y mira la magia.</p>' +
+                '<a href="https://play.google.com/store/apps/details?id=com.artivive" target="_blank"> <button  class="bt-msj-descargar" >Android</button></a>' +
+                '<a href="https://apps.apple.com/app/artivive/id1188737494" target="_blank"> <button  class="bt-msj-descargar" >Ios</button></a>',        //tamaño
+            willOpen: '4',
+            Button: '5',
+            imageWidth: 300,
+            imageHeight: 400,
+            //cerrar,
+            showCloseButton: true,
+            showConfirmButton: false,
+            background: '#fff',
+            backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+        })
+    }
+
+    function qr() {
+        Swal.fire({
+            html:
+                '<div class="vvv">' +
+                '    <img class="img-gb" src="img/qr-code.png" alt="">',        //tamaño
+            willOpen: '4',
+            Button: '5',
+            imageWidth: 300,
+            imageHeight: 400,
+            //cerrar,
+            showCloseButton: true,
+            showConfirmButton: false,
+            background: '#fff',
+            backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+        })
+    }
+
+    function per() {
+        Swal.fire({
+            html:
+                '<div class="vvv">' +
+
+                '    <img class="img-gb" src="img/aaa.jpg" alt="">' +
+                '   <img onclick="qr();" class="img-qr" src="img/fecha.jpg" alt="">',
+            willOpen: '4',
+            Button: '5',
+            imageWidth: 300,
+            imageHeight: 400,
+            //cerrar,
+            showCloseButton: true,
+            showConfirmButton: false,
+            background: '#fff',
+            backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+        })
+    }
+
+    function foto() {
+        Swal.fire({
+            html:
+                '<div class="vvv">' +
+                '<img class="img-gb" src="img/hq720.jpg" alt="">' +
+                '<b  style="margin-top: 20px;" >"No olvides unirte al álbum. De esta forma, te notificaremos cuando las fotos estén disponibles. 😊"</b>' +     //tamaño
+                '<a href="https://photos.app.goo.gl/uzgTcaG2ByRstu4D9" target="_blank"> <button  style="color: #fff; background: #000; margin: 10px;" class="bt-msj-descargar" >Abrir album</button></a>',        //tamaño    //tamaño
+            willOpen: '4',
+            Button: '5',
+            imageWidth: 300,
+            imageHeight: 400,
+            //cerrar,
+            showCloseButton: true,
+            showConfirmButton: false,
+            background: '#fff',
+            backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+        })
+    }
+
+    function video() {
+        Swal.fire({
+            html:
+                '<div class="vvv">' +
+                '<img class="img-gb" src="img/youtube.png" alt="">' +
+                '<b  style="margin-top: 20px;" >"No olvides guadar la playlist, te notificaremos cuando los videos estén disponibles. 💕"</b>' +     //tamaño
+                '<a href="https://www.youtube.com/playlist?list=PLdUxrqUNYw6pIxHORv98Ax1Z1NpdprGnD" target="_blank"> <button  style="color: #fff; background: #000; margin: 10px;" class="bt-msj-descargar" >Abrir Canal</button></a>',        //tamaño    //tamaño
+            willOpen: '4',
+            Button: '5',
+            imageWidth: 300,
+            imageHeight: 400,
+            //cerrar,
+            showCloseButton: true,
+            showConfirmButton: false,
+            background: '#fff',
+            backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+        })
+    }
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
